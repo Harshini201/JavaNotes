@@ -1,0 +1,393 @@
+*When datatype is converted explicitly is called casting [eg int a=23 ,byte b=127,b=(byte)a ]
+but we can't convert character into boolean .
+
+*Literals are called the values that are stored in the variable 
+
+*Ternary command  is used as like if else condition -(?:)  condition?:true:fasle
+* Java is an object oriented programming 
+When we created class code and it compiled and it converted into byte code goes to the jvm that's where we get the object 
+
+Jdk --- > Java Development Kit it is used to compile  and convert java as byte code .
+Jvm ---- > Java Virtual Machine it is uses byte code to execute the program -->need them as object .
+Jre -----> Java Runtime Environment it is used to add extra files if the code needed to run .
+
+-----
+Method --> is set  of instructions that can be called for executing using the  method name .
+Method Overloading
+  We can use same method name with different paremeter .
+-------
+Stack it is used store the key and value .
+Heap it is used to store the instance variable and reference variable method definition .
+--------
+--> shortend for decrement.
+-----
+Maven reprositry is used to download jar files
+---
+* Enhanced for loop is used especially for array and collections.
+-----
+Drawbacks of array:
+          1) It has fixed size;
+          2) It will traverse all elements in array.
+------
+Array.length; is used  to show actual length of the array.
+----
+ String:
+   if i want to store multiple charactar we use String
+  String has two types mutable and Immutable
+   for mutable we use StringBuffer and StringBuilder Keyword.
+              --------
+  eg: String Name ="Harsha";//here Harsha will be stored in heap
+ //(i.e) String Name ="Harsha";-->String Name =new String(); after that  Namr ="Harsha".
+ String Name2="Harsha";//here this value is not stored again heap as it has already  has Harsha name it will be used .They are in heap Called String Constant Pool.
+-----
+Static :
+   Static Keyword is used as they can used commonly .it can be called by class name.
+----
+This:
+   .The this keyword in Java is a reference variable that points to the current object.
+   .To avoid confusion between class attributes and parameters with the same name.
+-----
+Constructor :
+============
+   . It is same as like method we create constructor with name of class and does not have written type.
+   . Setting initial values: Constructors set initial values for object attributes.
+   .Everytime we create object it will call constructor.
+-----
+  This and Superkeyword:
+  ==========
+       super();
+       .it basically present in constructor and it may not be visible .until we use it code we can see it.
+      .to refer to the immediate parent class of a subclass. It allows a subclass to access and use the methods and variables of the
+      why used:
+      =======
+      .To enable the reuse of code in object-oriented programming
+      when used:
+      =========
+      .When a subclass inherits from a superclass
+      .When a subclass has an instance variable with the same name as the superclass.
+----------
+Name conversion :
+===========
+      in java we use CamelCasing:
+       .class and interface ---> Calc, Runnable.
+       .variables and method ----> marks,info().
+       .Constatnts---->PIE,MYBRAND.
+------------
+Anonymous Object:
+================
+    eg: new A(); here object created and it can't be reused.
+-----------
+Inheritance:
+===========
+.Inheritance in Java enables a class to inherit properties and actions from another class, called a superclass or parent class.    
+-------------
+* MultipleInheritance is not in java ,because of ambiguity .
+------------------
+MethodOverriding:
+================
+If subclass (child class) has the same method as declared in the parent class, it is known as method overriding in Java.
+----------------
+Packages
+========
+ . A Java package is a set of classes, interfaces, and sub-packages that are similar. In Java, it divides packages into two types: built-in packages and user-defined packages. Built-in Packages (packages from the Java API) and User-defined Packages are the two types of packages (create your own packages).
+---------
+Acess Modifiers:
+================
+.Access modifiers helps to restrict the scope of a class, constructor, variable, method, or data member. It provides security, accessibility, etc. to the user depending upon the access modifier used with the element.
+There are 4 types of access modifiers available in Java: 
+    Default – No keyword required
+    Private
+    Protected
+    Public
+    (refer the uses in pics folder)
+--------------
+PolyMorphism ==> poly means many ,Morphism means
+ behaviour.
+ ============
+ There are two types 
+                1) Compile time ==>The behaviour finds
+    during Compile time .(MethodOverLoading).
+                2) Runtime  ===> The behavoiur finds
+    during runtime .(MethodOverriding).
+PolyMorphism , core concept of object-oriented programming that allows objects to be treated as different types of objects .It's a way to perform the same action in different ways. 
+Benefits of polymorphism .
+=========================
+         1)Polymorphism makes code more flexible, extensible, and maintainable.
+         2)It allows developers to write code that can work with different types of objects without knowing their specific types.   
+--------------
+Final Keyword:
+=============
+ . The final keyword in Java is used to define entities that cannot be modified or extended. It can be used with variables, methods, and classes. 
+------------
+Equals()and hashcode():
+=======================
+ Java.lang.object has two very important methods defined: public boolean equals(Object obj) and public int hashCode().
+
+equals() method
+----------------
+In java equals() method is used to compare equality of two Objects. 
+
+hashCode() method
+----------------
+It returns the hashcode value as an Integer. Hashcode value is mostly used in hashing based collections like HashMap, HashSet, HashTable….etc. This method must be overridden in every class which overrides equals() method.
+------------
+Upcasting and downcasting 
+=====================
+    . These are the operations in Java that convert object references between classes. They are important for working with class inheritance and polymorphism. 
+--------------
+Abstract Keyword
+=================
+      .Abstract Keyword is used when we have feature but not sure what we need to do .
+      .Abstarct method should be in only abstract class and Abstract class doesn't compulsorly to have abstract method .This class contains all the normal methods too.
+      .We can't create the object for abstract class .
+      . we can extends the abstarct class to other class which we can create object is called concetre class.
+--------------
+Inner Class
+===========
+ .Inner class refers to the class that is declared inside class or interface which were mainly introduced, to sum up, same logically relatable classes as Java is object-oriented so bringing it closer to the real world.
+ .Static class for inner class an be only defined in inner class.
+ Anonymous inner class
+ ===================
+         .This is used when we need to use the class for one time not multiple time it used.
+------------
+Interface
+=========
+      . It is a blueprint of class has set of methods    need to implement .
+      . When it has varibales that will be like only final and static .
+      . "interface" in programming* does not have any memory allocation *because it only defines the structure of methods and properties that a class must implement, without providing any actual implementation details or data storage capabilities.
+  Use:
+  ====
+     It is used to provide total abstraction. That means all the methods in an interface are declared with an empty body and are public and all fields are public, static, and final by default. A class that implements an interface must implement all the methods declared in the interface.    
+---------------
+Enum  or Enumeration 
+=====================
+      .Enum is used named Constant .
+      .special data type that consists of a set of pre-defined named values separated by commas. These named values are also known as elements or enumerators or enum instances. Since the values in the enum type are constant, you should always represent them in UPPERCASE letters.
+
+Enum can has method ,variable ,constructor .
+ * we can't extend enum with any other class.
+ enum is extends with enum class.
+---------------
+Annotation (@....)     
+           .There are many types of annotation.
+           .It is used to interact with compiler and runtime . It gives extra information to the compiler.
+      Annotations start with ‘@’.
+.Annotations do not change the action of a compiled program.
+.Annotations help to associate metadata (information) to the program elements i.e. instance variables, constructors, methods, classes, etc.
+.Annotations are not pure comments as they can change the way a program is treated by the compiler. 
+.Annotations basically are used to provide additional information, so could be an alternative to XML and Java marker interfaces. 
+--------------
+Functional Interface:
+=====================
+   .It is used when interface has only one method it can be done by using  functionl interface annotation.
+   .We can instantiate with anonymous inner class.
+   .It is also called Single Access Method(SAM).
+--------------
+Lamda:
+=======
+   .It is used to reduce the code especially for the functional interface.
+   ->
+   .Lambda expressions in Java, introduced in Java SE 8, represent instances of functional interfaces (interfaces with a single abstract method). They provide a concise way to express instances of single-method interfaces using a block of code.
+---------    
+Types Of Interface: 
+====================
+  . Normal Interface : Here we have more methods.
+  . Functional or SAM Interface:
+                 Here we only define one  method.
+  .  Marker Interface: 
+                 Here we have no methods .
+    * this one especially used for object to store in hardware. 
+    eg: if we store object in heap and we can store in hardware  is called Serialization.
+    if we  use again is called deserialization .
+    (eg : if we wnat to continue again the game with same score.)
+    not all object can be stored but we need permission we can do it with Marker interface.
+---------------                        
+Exception:
+=========
+ It is basically called Error.
+         1)Compile time Error
+         2)Runtime Error ---) We  are handling runtime error by exception handling.
+         3)Logical Error
+Exception Handling :
+=================
+Can be handled by :
+   . try-catch block, finally block, throwing Exceptions, Custom Exception handling, etc.         
+-------------------
+Exception Hierchy see in pics folder.
+------------------ 
+Throw Exception:
+==============
+ .It is used to explicitly throw an exception. 
+ .It is used inside the function and can be used only to check the unchecked Exception .
+ RuntimeException.
+
+-------------
+Throws Exception:
+=================
+.The throws keyword is used in the function signature. It is used when the function has some statements that can lead to exceptions.     
+.Throws used for checked exception.
+----------------
+Throw vs Throws :
+=============
+Point of Usage:
+=================
+.Throw-The throw keyword is used inside a function. It is used when it is required to throw an Exception logically.
+.Throws-The throws keyword is used in the function signature. It is used when the function has some statements that can lead to exceptions.
+Exceptions Thrown:
+==================
+.Throw -The throw keyword is used to throw an exception explicitly. It can throw only one exception at a time.
+.Throws-The throws keyword can be used to declare multiple exceptions, separated by a comma. Whichever exception occurs, if matched with the declared ones, is thrown automatically then.
+Syntax:
+=======
+ .Throw keyword includes the instance of the Exception to be thrown. Syntax wise throw keyword is followed by the instance variable.
+ .Throws keyword includes the class names of the Exceptions to be thrown. Syntax wise throws keyword is followed by exception class names.
+Propagation of Exceptions:
+==========================
+.Throw keyword cannot propagate checked exceptions. It is only used to propagate the unchecked Exceptions that are not checked using the throws keyword.
+.Throws keyword is used to propagate the checked Exceptions only. 
+-----------------------------------
+User Inuput :
+===========
+ * 1) System.out.println();
+ here prinln() is method and class of PrintStream ,and it was declared as object out in static system class 
+ so we using like this
+ userinput : Scanner sc =new Scanner(System.in);
+             int num =sc.nextInt();
+                    for string nextLine();etc.
+-----------------
+try with finally :
+==============
+ try{
+
+ }
+ finally{//it is used to close the resource
+
+ }
+------------------
+Theards:
+========
+      .It allows to do muliple task at the same time .
+eg: if one particular software is running , that has multiple threads
+    becuase it divides the tasks to small and run .
+       .It is Ligtweight .
+       .Threads allows a program to operate more efficiently by doing multiple things at the same time.
+
+Threads can be used to perform complicated tasks in the background without interrupting the main program.
+.Thread  implemented by start() which will be run by run()
+method.
+.We can suggest OS scheduler for priortize this thread by setpriority .
+.We can also ask them to wait for other exeution by sleep().
+
+If the class extends the Thread class, the thread can be run by creating an instance of the class and call its start() method
+-----------------
+Threads can be done by two type 
+      by . extends a thread 
+      or . implements Runnable.
+runnable is also an functional interface we can use them with Lambda.
+-----------------
+Thread safe :
+============
+if the two threads needs to be run simultaniously sometimes value will be changed  .
+
+A process of running multiple threads simultaneously. 
+When multiple threads are working on the same data,
+ and the value of our data is changing, 
+ that scenario is not thread-safe and we will get 
+ inconsistent results. When a thread is already 
+ working on an object and preventing another thread 
+ on working on the same object, 
+ this process is called Thread-Safety.  we use synchornized .
+------------
+Thread States :
+==============
+A thread is a program in execution created to perform a specific task. Life cycle of a Java thread starts with its birth and ends on its death.
+
+The start() method of the Thread class is used to initiate the execution of a thread and it goes into runnable state and the sleep() and wait() methods of the Thread class sends the thread into non runnable state.
+
+After non runnable state, thread again comes into runnable state and starts its execution. The run() method of thread is very much important. After executing the run() method, the lifecycle of thread is completed.
+
+All these phases of threads are the states of thread in Java.
+
+(refer pic folder)
+---------
+Buffered Reader:
+===============
+  It is used  as a middle ware between program an file system .
+  The BufferedReader maintains an internal buffer of 8192 characters.
+
+The BufferedReader class of the java.io package can be used with other readers to read data (in characters) more efficiently.
+
+It extends the abstract class Reader.
+
+
+During the read operation in BufferedReader, a chunk of characters is read from the disk and stored in the internal buffer. And from the internal buffer characters are read individually.
+
+Hence, the number of communication to the disk is reduced. This is why reading characters is faster using BufferedReader.
+
+FileReader 
+:in Java is a class in the java.io package which can be used to read a stream of characters from the files.
+------------------
+Collection:
+==========
+ In Java, a **Collection** is an object that represents a group of elements or objects. It is part of the Java Collections Framework, which provides a set of interfaces and classes to work with data in a group (like lists, sets, maps, etc.).
+
+Simple Definition:
+- A **Collection** is a container or a data structure that can hold multiple elements.
+- It allows you to store, retrieve, and manipulate groups of objects (such as adding or removing elements).
+
+ Why do we use Collections in Java?
+- **Organizing data**: Collections help you organize and store data in an efficient way (e.g., in lists, sets, or maps).
+- **Dynamic size**: Collections grow or shrink in size dynamically, unlike arrays, which have a fixed size.
+- **Easy to use**: Collections come with built-in methods for common operations like searching, sorting, and modifying data.
+- **Different types**: You can choose the best collection type depending on your needs (e.g., `ArrayList`, `HashSet`, `HashMap`, etc.).
+
+In summary, collections provide an easy and efficient way to manage groups of objects in Java.
+ ------------
+ .Collection API
+ .Collection (interface)
+ .collections(classes).
+ -----------
+ Refer pic folder -> Collection.
+
+ List -> is it is mostly used for getting index value
+---> ArrayList is a part of the collection framework. It is present in the java.util package and provides us dynamic arrays in Java. Though, it may be slower than standard arrays but can be helpful in programs where lots of manipulation in the array is needed. We can dynamically add and remove items. It automatically resizes itself.
+.Arraylist is a class which is a part of the Collections Frameworks in java. It implements the List interface hence all the methods of the List class can be used here. We need to import the java.util package for using the Arraylist class.
+.As the name suggests ArrayList provides us with a dynamic array( resizable array which can change its size whenever required) for storing data items of the same data type. The Arraylist implemented here is different from the fixed sized array in terms of size and speed as well.
+---> LinkedList 
+is a linear data structure where the elements are not stored in contiguous locations and every element is a separate object with a data part and address part. The elements are linked using pointers and addresses. Each element is known as a node. Due to the dynamicity and ease of insertions and deletions, they are preferred over the arrays.
+
+.LinkedList are also linear data structures like ArrayList. Here we are not required to specify any size. The objects stored here are not stored in contiguous memory locations like ArrayList. A LinkedList is made up of ‘nodes’. These nodes are the building blocks of the LinkedList just like the cells of an array. A node stores the object data as well as the next node’s address in its p address field.
+.There are 2 types of Linked List
+
+Singly Linked List – Here every node stores the address of only the next node in the list. We can traverse the list only in one direction( start to end ).
+Doubly Linked List – Here every node stores the address of the previous as well as next node in the list. We can traverse the list only in both directions( start to end and end to start ).
+
+Queue --> The Queue interface of the Java collections framework provides the functionality of the queue data structure. It extends the Collection interface.
+.ArrayDeque--The ArrayDeque class implements these two interfaces:
+    Java Queue Interface
+    Java Deque Interface
+.PriorityQueue--> priority queue will be  based on heap array ; here value will be placed based on priority and insert and deletion will be occur small value will be high priority and large value will be low priority.
+
+.LinkedList
+
+
+
+Set -> it give unique value doesn't have get methods .
+ -------------
+ Iterator:
+ =========
+ An **Iterator** in Java is an object that allows you to **traverse** (or iterate) through a collection of elements, one by one. It provides a way to access elements in a collection without exposing the underlying structure (like arrays or lists).
+
+Simple Definition:
+An **Iterator** is an interface that provides methods to:
+1. **Check** if there are more elements in the collection (`hasNext()`).
+2. **Retrieve** the next element (`next()`).
+3. **Remove** elements from the collection while iterating (`remove()`).
+
+Why use an Iterator?
+
+- **Safe traversal**: Iterators allow you to loop through a collection without worrying about modifying it in ways that could cause errors.
+- **Uniformity**: You can use the same methods to iterate over different types of collections (like `ArrayList`, `HashSet`, etc.).
+
+In short, an **Iterator** is a simple way to go through the elements of a collection.
+------------
